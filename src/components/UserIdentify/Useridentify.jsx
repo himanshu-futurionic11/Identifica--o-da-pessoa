@@ -660,7 +660,89 @@ const Useridentify = () => {
           </div>
         </div>
       </div>
-      
+      <div className="information-8 my-14 mx-4 rounded-xl   border">
+        <div className="text-xl px-4 py-6 border-b font-semibold flex items-center justify-between ">
+          <p>Moradas</p>
+        </div>
+        <div className="px-4 py-4 pb-4 flex items-center space-x-9 text-[#084f87]">
+          <p className="flex items-center space-x-3">
+            <MdViewColumn size={24} />
+            <span>Colunas</span>
+          </p>
+          <p className="flex items-center space-x-3">
+            <MdFileDownload size={24} />
+            <span>filtros</span>
+          </p>
+          <p className="flex items-center space-x-3">
+            <MdFilterList size={24} />
+            <span>exportar</span>
+          </p>
+        </div>
+
+        <div class="overflow-x-auto relative  sm:rounded-lg  py-6">
+          <table class="w-full text-sm font-normal  text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs  text-black/75 uppercase leading-[0px]">
+              <tr>
+                {" "}
+                <th scope="col" class="py-4 pl-4 pr-8 ">
+                  Morada
+                </th>
+                <th scope="col" class="py-4  pr-8 "></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-y text-sm  dark:bg-gray-800 dark:border-gray-700  hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th
+                  scope="row"
+                  class=" font-normal py-6 pl-4 whitespace-nowrap dark:text-white"
+                >
+                  Av. António Augusto de Aguiar 39, Lisboa
+                </th>
+                <td class="py-6 pr-10  pl-2">
+                  <span class="px-1 py-1.5 rounded-full bg-yellow-400">
+                    Principal
+                  </span>
+                </td>
+              </tr>
+              <tr class="bg-white border-y text-sm  dark:bg-gray-800 dark:border-gray-700  hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th
+                  scope="row"
+                  class=" font-normal py-6 pl-4 whitespace-nowrap dark:text-white"
+                >
+                  Av. António Augusto de Aguiar 39, Lisboa
+                </th>
+                <td class="py-6 pr-10 pl-2">
+                  <span class="px-1 py-1.5 rounded-full bg-yellow-400">
+                    Principal
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div className="flex items-center justify-between pt-4 text-sm text-gray-500/90">
+            <p></p>
+            <div className="flex items-center space-x-2">
+              <p>Lorem ipsum dolor:</p>
+
+              <select class="select w-14 p-0 text-black m-0 border-none ">
+                <option disabled selected>
+                  5
+                </option>
+
+                <option>10</option>
+                <option>15</option>
+              </select>
+              <p>1-1 de 1</p>
+            </div>
+
+            <span className="flex items-center space-x-4">
+              {" "}
+              <MdKeyboardArrowLeft size={25} />
+              <MdKeyboardArrowRight size={25} />
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
